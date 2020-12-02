@@ -96,7 +96,7 @@ class QuoteController extends AbstractRestfulController
         return $quotes;
     }
     private function updateCache($file) {
-        $update_cache = true;
+        $update_cache = false;
         $update_cache_time_limit = 10;
 
         $date_file = date ("Y/m/d H:i", @filectime ($file));
